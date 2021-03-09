@@ -1,0 +1,30 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h2>Obsah kvádru</h2>
+</div>
+<form method="post">
+    <div>
+        <p>Zadejte délku strany A v mm:</p>
+    </div>
+    <input type="number" name="A">
+    <br />
+    <div>
+        <p>Zadejte délku strany B v mm:</p>
+    </div>
+    <input type="number" name="B">
+    <br />
+    <div>
+        <p>Zadejte délku strany C v mm:</p>
+    </div>
+    <input type="number" name="C">
+    <input type="submit">
+</form>
+<div>
+    <p>Objem kvádru je: @Model.Objem mm3</p>
+    <p>Povrch kvádru je: @Model.Povrch mm2</p>
+</div>
